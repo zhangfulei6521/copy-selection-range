@@ -1,0 +1,19 @@
+# Maven / Java build outputs
+target/
+*.class
+*.log
+
+# Local Maven cache (project-local)
+.m2repo/
+
+# IntelliJ IDEA local/project files
+.idea/
+*.iml
+out/
+
+# Local assistant/tool settings
+.claude/
+
+# OS junk
+.DS_Store
+Thumbs.db

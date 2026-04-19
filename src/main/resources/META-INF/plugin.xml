@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.example.idearange.copySelectionRange</id>
+    <name>Copy Selection Range</name>
+    <vendor email="you@example.com">YourName</vendor>
+
+    <description>
+        Copy selected code as relativePath:startLine-endLine, then try to send to PowerShell window on Windows.
+    </description>
+
+    <idea-version since-build="243"/>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends optional="true">org.jetbrains.plugins.terminal</depends>
+
+    <actions>
+        <action
+                id="com.example.idearange.CopySelectionRangeAction"
+                class="com.example.idearange.CopySelectionRangeAction"
+                text="Copy Selection Range"
+                description="Copy selected code as path:start-end and try send to PowerShell">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt shift y"/>
+        </action>
+    </actions>
+</idea-plugin>
